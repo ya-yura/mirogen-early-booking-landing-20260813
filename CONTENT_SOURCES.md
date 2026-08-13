@@ -1,0 +1,37 @@
+# Источники контента
+
+Дата проверки официальных материалов: **13 августа 2026 года**.
+
+Источник истины для фактов и названий — только официальный сайт отеля «Мироген».
+
+| Материал | URL | Использовано |
+| --- | --- | --- |
+| Главная | https://xn----ftbecnqilbfvs6k.xn--p1ai/ | название отеля, локация, адрес, телефон, e-mail, WhatsApp, бассейн, пляжная зона, детская инфраструктура, парковка, Wi-Fi, правила заезда |
+| Номера | https://xn----ftbecnqilbfvs6k.xn--p1ai/rooms/ | названия категорий номеров, балконы, фотографии и базовые характеристики номерного фонда |
+| Питание | https://xn----ftbecnqilbfvs6k.xn--p1ai/food/ | завтрак, полупансион, полный пансион, часы питания, система меню-заказ |
+| Сервис | https://xn----ftbecnqilbfvs6k.xn--p1ai/services/ | подогреваемый бассейн, собственная пляжная зона, детская комната, кафе-бар, столовая, парковка |
+| Контакты | https://xn----ftbecnqilbfvs6k.xn--p1ai/contact/ | фактический адрес, телефон, e-mail, WhatsApp, круглосуточная работа |
+| Цены и правила | https://xn----ftbecnqilbfvs6k.xn--p1ai/price/ | документы для заезда и требование уточнять актуальную стоимость по запросу |
+| Фотогалерея | https://xn----ftbecnqilbfvs6k.xn--p1ai/galerey/ | фотографии фасада, территории, бассейна, моря, детской комнаты и деталей отеля |
+
+## Локальные изображения
+
+Все изображения находятся в `public/images/official/` и преобразованы в WebP. Исходные URL сохранены здесь для трассировки:
+
+| Файл | Исходный URL | Роль на странице |
+| --- | --- | --- |
+| `gallery-1.webp` | https://xn----ftbecnqilbfvs6k.xn--p1ai/images/galerey/1.jpg | первый экран: фасад и бассейн |
+| `room-sea.webp` | https://xn----ftbecnqilbfvs6k.xn--p1ai/images/rooms/107/DSC_2052.jpg | категория с видом на море, шаг заявки |
+| `room-pool.webp` | https://xn----ftbecnqilbfvs6k.xn--p1ai/images/rooms/102/DSC_2099.jpg | категория с видом на бассейн |
+| `room-mountain.webp` | https://xn----ftbecnqilbfvs6k.xn--p1ai/images/rooms/112/DSC_2141.jpg | категория с видом на горы |
+| `room-improved.webp` | https://xn----ftbecnqilbfvs6k.xn--p1ai/images/rooms/110/DSC_2149.jpg | улучшенная категория |
+| `room-direct-sea.webp` | https://xn----ftbecnqilbfvs6k.xn--p1ai/images/rooms/106/DSC_2038.jpg | полулюкс с прямым видом |
+| `room-side-sea.webp` | https://xn----ftbecnqilbfvs6k.xn--p1ai/images/rooms/111/DSC_2160.jpg | полулюкс с боковым видом |
+| `room-suite.webp` | https://xn----ftbecnqilbfvs6k.xn--p1ai/images/rooms/104/DSC_2084.jpg | люкс с видом на море |
+| `room-pool-suite.webp` | https://xn----ftbecnqilbfvs6k.xn--p1ai/images/rooms/201/DSC_2170.jpg | люкс с видом на бассейн |
+| `pool.webp` | https://xn----ftbecnqilbfvs6k.xn--p1ai/images/services/DSC_2034.jpg | бассейн в визуальной последовательности |
+| `gallery-2122.webp` | https://xn----ftbecnqilbfvs6k.xn--p1ai/images/galerey/DSC_2122.jpg | утро и вид на море |
+| `gallery-2244.webp` | https://xn----ftbecnqilbfvs6k.xn--p1ai/images/galerey/DSC_2244.jpg | море и побережье |
+| `food.webp` | https://xn----ftbecnqilbfvs6k.xn--p1ai/images/food/DSC_2109.jpg | питание и кафе |
+
+Перед переносом на домен владельца требуется подтвердить право на публикацию фотографий на новом домене.
