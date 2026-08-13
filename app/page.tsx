@@ -193,7 +193,7 @@ export default function Home() {
       <section className="hero" id="top">
         <img
           className="hero-image"
-          src="/images/official/gallery-1.webp"
+          src="images/official/gallery-1.webp"
           alt="Фасад отеля «Мироген» и бассейн с видом на море"
           fetchPriority="high"
         />
