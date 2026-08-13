@@ -3,7 +3,7 @@ import { resolve } from "node:path";
 import { pathToFileURL } from "node:url";
 
 const repositoryName = process.env.GITHUB_REPOSITORY?.split("/")[1] ?? "mirogen-early-booking-landing-20260813";
-const basePath = `/${repositoryName}`;
+const basePath = process.env.GITHUB_ACTIONS === "true" ? `/${repositoryName}` : "";
 const outputDir = resolve("out");
 
 await rm(outputDir, { recursive: true, force: true });
