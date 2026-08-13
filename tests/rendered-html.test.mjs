@@ -25,9 +25,10 @@ test("server-renders the hotel landing page", async () => {
   assert.match(html, /<html[^>]+lang="ru"/i);
   assert.match(html, /Отель «Мироген»/i);
   assert.match(html, /Раннее бронирование/i);
-  assert.match(html, /Проверить даты и условия/i);
+  assert.match(html, /Проверьте условия раннего бронирования на свои даты/i);
+  assert.match(html, /Проверить даты и стоимость/i);
   assert.match(html, /hotelmirogen@yandex\.ru/i);
-  assert.doesNotMatch(html, /2025|июньская|COVID|заглушка|TODO|\bAI\b/i);
+  assert.doesNotMatch(html, /2025|июньская|COVID|заглушка|TODO|\bAI\b|ДВМ улучшеный|Пять состояний/i);
 });
 
 test("keeps the offer data centralized and starter artifacts removed", async () => {
@@ -42,7 +43,12 @@ test("keeps the offer data centralized and starter artifacts removed", async () 
   assert.match(data, /https:\/\/wa\.me\/79181872888/);
   assert.match(page, /utm_source/);
   assert.match(page, /Открыть WhatsApp/);
-  assert.doesNotMatch(page, /2025|июньская|COVID|заглушка|TODO|\bAI\b/i);
-  assert.doesNotMatch(data, /2025|июньская|COVID|заглушка|TODO|\bAI\b/i);
+  assert.match(page, /Открыть e-mail/);
+  assert.match(page, /Позвонить в отель/);
+  assert.match(page, /aria-controls/);
+  assert.match(page, /Укажите хотя бы один способ связи/);
+  assert.match(data, /compliance\.php/);
+  assert.doesNotMatch(page, /2025|июньская|COVID|заглушка|TODO|\bAI\b|ДВМ улучшеный|Пять состояний/i);
+  assert.doesNotMatch(data, /2025|июньская|COVID|заглушка|TODO|\bAI\b|ДВМ улучшеный|Пять состояний/i);
   assert.doesNotMatch(packageJson, /react-loading-skeleton/);
 });
