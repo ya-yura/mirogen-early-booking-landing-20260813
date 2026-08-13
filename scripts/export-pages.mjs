@@ -10,6 +10,16 @@ await rm(outputDir, { recursive: true, force: true });
 await mkdir(outputDir, { recursive: true });
 await cp(resolve("dist/client"), outputDir, { recursive: true });
 
+// vinext mirrors the repository base path on disk; GitHub Pages already strips
+// that prefix before resolving files, so flatten the generated asset directory.
+const nestedAssetDir = resolve(outputDir, repositoryName);
+try {
+  await cp(nestedAssetDir, outputDir, { recursive: true, force: true });
+  await rm(nestedAssetDir, { recursive: true, force: true });
+} catch (error) {
+  if (error?.code !== "ENOENT") throw error;
+}
+
 const server = await import(pathToFileURL(resolve("dist/server/index.js")).href);
 const request = new Request(`http://localhost${basePath}/`, {
   headers: { accept: "text/html" },
